@@ -18,8 +18,9 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_DEPLOY_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_DEPLOY_SECRET }}
-          application_name: ennajahayb
-          environment_name: Ennajahayb-env
+          application_name: test300
+          environment_name: Test300-env
           version_label: ${{ github.sha }}
+          existing_bucket_name: ennjahaybs3
           region: eu-west-3
           deployment_package: deploy.zip
