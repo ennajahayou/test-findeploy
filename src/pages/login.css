@@ -1,0 +1,121 @@
+.login-container {
+  background: #b7d6ed; /* Dégradé de couleurs */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+  font-family: Arial, sans-serif;
+  /* width: ; */
+  /* max-width: 600px; */
+  /* margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
+  /* background-color: #f9f9f9; */
+  float: none;
+  flex-grow: 100;
+}
+
+.login-container h2 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+.form-group label {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+.form-group input[type="email"] {
+  /* Ajoutez des styles spécifiques pour le champ email */
+}
+
+.form-group input[type="password"] {
+  /* Ajoutez des styles spécifiques pour le champ mot de passe */
+}
+
+button {
+  background: #6b47ff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff6b6b;
+}
+
+.message {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.link {
+  color: #6b47ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.user-details {
+  font-family: Arial, sans-serif;
+  /* width: ; */
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  float: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  flex-grow: 100;
+}
+
+.user-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-details ol {
+  list-style: none;
+  padding: 0;
+}
+
+.user-details li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.user-details li:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}

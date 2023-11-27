@@ -1,0 +1,206 @@
+.messaging-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* pour centrer verticalement */
+  /* pour centrer horizontalement */
+  width: 100%;
+  /* ajustez selon vos besoins */
+  /* ajustez selon vos besoins */
+}
+
+.messages {
+  background-color: white;
+  padding: 20px; /* Espace à l'intérieur des rectangles */
+  /* Espace entre les rectangles */
+  /* Bordure autour des rectangles */
+  border-radius: 5px; /* Coins arrondis */
+  width: 93%;
+  margin: auto;
+  /* pour centrer horizontalement */
+}
+
+.message.bubble {
+  background-color: #aad9db; /* couleur du fond d'écran */
+  border-radius: 15px;
+  margin: 20px; /* arrondit les coins */
+  margin-bottom: 30px; /* espace entre les messages */
+  padding: 30px; /* espace à l'intérieur des bulles de message */
+  color: white;
+  /* couleur du texte pour une meilleure visibilité sur le fond bleu */
+}
+
+.message.button {
+  background-color: rgb(255, 255, 255); /* couleur du fond d'écran */
+  border-radius: 5px;
+  margin: 5px; /* arrondit les coins */
+  padding: 5px; /* espace à l'intérieur des bulles de message */
+  color: rgb(
+    0,
+    0,
+    0
+  ); /* couleur du texte pour une meilleure visibilité sur le fond bleu */
+}
+
+.message.button {
+  background-color: rgb(255, 255, 255); /* couleur du fond d'écran */
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+
+  background-color: rgb(11, 18, 96);
+  padding: 20px; /* Espace à l'intérieur des rectangles */
+  /* Espace entre les rectangles */
+  /* Bordure autour des rectangles */
+  /* Coins arrondis */
+  width: 93%;
+  height: auto;
+  margin: auto;
+  /* pour centrer horizontalement */
+}
+
+.input-submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #aad9db;
+  padding: 20px; /* Espace à l'intérieur des rectangles */
+  /* Espace entre les rectangles */
+  /* Bordure autour des rectangles */
+  /* Coins arrondis */
+  width: 90%;
+  height: 20px;
+  border-radius: 20px;
+  margin: auto;
+  /* pour centrer horizontalement */
+}
+
+.message-input {
+  flex-grow: 2; /* Cela permettra aux deux éléments de prendre autant d’espace que possible */
+  padding: 15px; /* Ajoute du remplissage pour augmenter la taille des éléments */
+  background-color: #aad9db; /* Ajustez la couleur de fond selon vos besoins */
+  color: white; /* Ajustez la couleur du texte selon vos besoins */
+  border: none;
+  font-size: large; /* Supprime la bordure, ajustez selon vos besoins */
+}
+
+::placeholder {
+  color: rgb(210, 210, 210);
+}
+
+.send-button {
+  /* Supprime la bordure, ajustez selon vos besoins */
+  width: 15%;
+  padding: 15px 15px;
+  font-size: 15px; /* Ajustez la taille de la police si nécessaire */
+  border: none; /* Pour supprimer la bordure par défaut des boutons */
+  background-color: white; /* Pour changer la couleur de fond du bouton */
+  color: rgba(
+    6,
+    38,
+    12,
+    0.852
+  ); /* Pour changer la couleur du texte du bouton */
+  cursor: pointer; /* Pour changer le curseur en main lorsque vous survolez le bouton */
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+.submition-pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(114, 114, 114, 0.8);
+  width: 350px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.submitButton {
+  background-color: #211c66;
+  border: none;
+  color: white;
+  /* padding: 15px 32px; */
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.scroll {
+  margin-top: 50px;
+  height: 430px; /* ou tout autre valeur selon votre conception */
+  overflow-y: auto;
+  width: 100%;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 1px; /* Largeur de la barre de défilement */
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* Couleur de fond de la barre */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9; /* Couleur du curseur de défilement */
+  border-radius: 4px; /* Arrondir les bords du curseur */
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #696969; /* Couleur du curseur lors du survol */
+}
+
+.h1 {
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+  justify-content: center;
+  margin: 100px;
+}
+
+.logo-bar {
+  position: relative;
+  width: 100%;
+  height: 100px; /* exemple de hauteur, ajustez selon vos besoins */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+.thanks {
+  margin: 5px;
+}
+
+.thanks {
+  display: flex;
+  align-items: center; /* s'assure que le texte et l'image sont alignés verticalement */
+  font-size: 40px; /* taille du texte "0" */
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.symbole {
+  width: 40px; /* largeur de l'image */
+  height: 40px; /* hauteur de l'image */
+  margin-left: 5px; /* espace entre le texte "0" et l'image */
+}
