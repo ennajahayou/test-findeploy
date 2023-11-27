@@ -14,7 +14,7 @@ jobs:
         run: zip -r deploy.zip . -x '*.git*'
 
       - name: Deploy to EB
-        uses: ennajahayou/test-findeploy@v21
+        uses: ennajahayou/test-findeploy
         with:
           aws_access_key: ${{ secrets.AWS_DEPLOY_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_DEPLOY_SECRET }}
