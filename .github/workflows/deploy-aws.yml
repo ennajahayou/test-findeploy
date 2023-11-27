@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - "main"
+permissions:
+    id-token: write # This is required for requesting the JWT
+      
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,8 +19,8 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: arn:aws:iam::211257985622:role/github.to.aws.oicd
+
           application_name: testfdocker
           environment_name: Testfdocker-env
           version_label: ${{ github.sha }}
